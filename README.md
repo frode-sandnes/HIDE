@@ -7,7 +7,7 @@ The resources include
 2) A java implementation for testing and evaluation purposes (research-ware).
 3) The list of names used in the experiments.
 
-The browser tool consist of:
+The browser tool consists of:
 1) HIDE.css - a simple CSS-stylesheet for HIDE.
 2) HIDE.js - JavaScript logic for HIDE.
 3) index.html - the html-page for HIDE.
