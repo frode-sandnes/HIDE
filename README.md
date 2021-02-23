@@ -14,7 +14,7 @@ The browser tool consists of:
 
 The code for experimentation consists of:
 1) HIDE.java - a javafile with various routines to conduct experiments with HIDE.
-2) freqWords.txt - a list of the 2000 most frequent English words used as salts.
+2) freqWords.txt - a list of the 3,000 most frequent English words used as salts.
 
 The list of names includes:
 1) longlist-original.txt - the original list of names extracted from the dataset of: John PA Ioannidis, Jeroen Baas, Richard Klavans, and Kevin W. Boyack. 2019. A standardized citation metrics author database annotated for scientific field." PLoS biology 17, no. 8: e3000384.
