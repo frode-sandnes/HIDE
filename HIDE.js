@@ -76,7 +76,8 @@ function encode()
 	code += salt;
 	var hash = "0000000"+code.hashCode();
 	var id = hash.substring(hash.length-digits);
-	document.getElementById("participantid").innerHTML = "<p style=\"color:rgb(255,0,0);\">Particpant id: "+id+"</p>";	
+	var anonymityEstimate = "<p><b>WARNING</b>: The population these participants are recruited from should comprise more than <b>"+(5*Math.pow(10,digits)).toLocaleString()+"</b> individuals to ensure a mimum level of anonymity (k-anonymity = 5). Population could here refer to a country, region, particular institution, or similar, where there are publicly available list of names such as phone directories. Note that this is a probabilistic estimate only.<p>";
+	document.getElementById("participantid").innerHTML = "<p style=\"color:rgb(255,0,0);\">Particpant id: "+id+"</p>"+anonymityEstimate;	
 //	alert("here "+id);
 	return false;
 	}
@@ -225,7 +226,7 @@ function analysesalts(names,salts,codes,numIteration,i=1)
 		
 	
 function analyse()
-	{
+	{		
 	var nameArea = document.getElementById("listid").value;
 	var names = nameArea.split("\n");	
 	var saltArea = document.getElementById("slistid").value;
@@ -242,10 +243,10 @@ function analyse()
 		{
 		return false;
 		}
-	
+
 	// do search routine
 	optimize(names,salts,codes);
-				
+
 	return false;
 	}
 	

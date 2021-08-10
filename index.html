@@ -13,12 +13,13 @@
 
 <html>
 	<body>
+		<div class="container">
 		<h1>HIDE: Short anonymous linking IDs for small-sample experiments</h1>
- 
-		<p>To cite this linking procedure use the following reference:</p>
-		<p>Frode Eika Sandnes. 2021. HIDE: Short IDs for Robust and Anonymous Linking of Users Across Multiple Sessions in Small HCI Experiments. CHI '21 Conference on Human Factors in Computing Systems Extended Abstracts Proceedings. ACM. <a href="https://doi.org/10.1145/3411763.3451794" title="External link to paper">https://doi.org/10.1145/3411763.3451794</a></p>
- 
-		<form name="encodeform" onsubmit="return encode()">
+		</div>
+		
+		<div class="container">
+			<div class="form">
+			<form name="encodeform" onsubmit="return encode()">
 			<h2>Encode participant (in operation)</h2>
 			<ul>
 				<li>
@@ -47,11 +48,8 @@
 		<form name="analyseform" onsubmit="return analyse()">
 		<h2>Check list and find salt (setup)</h2>	
 		
-		<div id="myPopup" class="popup">
-			<p>Some text in the Modal..</p>
-		</div>
+<div id="myPopup"></div>
 
-		
 		<p id="resultid"></p>		
 		    <p>
 				<button type="submit">Check list and find best salt</button> 
@@ -66,8 +64,7 @@ Snoopy the Dog</textarea>
 
  		    <p>
 				<label for="slistid"><span>Salts (paste here, one salt per line)</span></label>
-				<textarea id="slistid" name="saltlist" rows="5" cols="15">
-a
+				<textarea id="slistid" name="saltlist" rows="5" cols="15">a
 abandon
 ability
 able
@@ -3068,6 +3065,18 @@ yourself
 youth
 zone</textarea>
 			</p>
-		</form>		
+				</form>	
+			</div>	
+
+			<div class="info">
+				<h2>About the tool</h2>
+				<p>To use the tool you first <em>check a list of names and find a suitable salt</em>. Then you can look up the ID of individuals with <em>Encode</em>. Note that no linking table is required.</p>
+				<p>Note that the current implementation only works with names transcribed using Latin characters. Each name must be unique. </p>
+				<p>To cite this linking procedure use the following reference:</p>
+				<p>Frode Eika Sandnes. 2021. HIDE: Short IDs for Robust and Anonymous Linking of Users Across Multiple Sessions in Small HCI Experiments. CHI '21 Conference on Human Factors in Computing Systems Extended Abstracts Proceedings. ACM. <a href="https://doi.org/10.1145/3411763.3451794" title="External link to paper">https://doi.org/10.1145/3411763.3451794</a></p>
+				<p>This video gives an overview of the rationale for the tool and how to use it.</p>				
+				<iframe width="320" height="180" src="https://www.youtube.com/embed/bSO2sNWTUW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>	
 	</body>
 </html>
